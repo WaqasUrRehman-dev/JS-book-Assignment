@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Assignment 43-48</h1>
+    <h2>EVENTS</h2>
+
+    <!-- 1. Show an alert box on click on a link -->
+
+    <a href="#" onclick="showAlert()">Click me</a>
+
+    <!-- 2. Display some Mobile images in browser. On click on an image Show
+    the message in alert to user. -->
+
+    <div>
+      <img
+        src="https://5.imimg.com/data5/SELLER/Default/2023/3/296178265/EX/FQ/OZ/186724856/vivo-mobile-phone.jpg"
+        alt="mobile1"
+        onclick="showMessage('Thanks for purchasing vivo y100 from us', this)"
+        width="200"
+      />
+      <img
+        src="https://5.imimg.com/data5/SELLER/Default/2023/7/322696313/YT/LA/KI/188924882/vivo-mobile-phone-500x500.jpg"
+        alt="mobile2"
+        onclick="showMessage('Thanks for purchasing vivo y22 from us', this)"
+        width="200"
+      />
+      <img
+        src="https://dinapalagroup.lk/wp-content/uploads/2024/02/VIVO-Y16-4-64-B-01.jpg"
+        alt="mobile3"
+        onclick="showMessage('Thanks for purchasing vivo y16 from us', this)"
+        width="200"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfIpfU-QBiFC7EwuHTvNv-_C09a97FINH8SDRY65VNG2OH4r7NxCcjbcwc77oAJutUmGQ&usqp=CAU"
+        alt="mobile4"
+        onclick="showMessage('Thanks for purchasing vivo y17s from us', this)"
+        width="200"
+      />
+    </div>
+
+    <!-- 3. Display 10 student records in table and each row should contain a delete
+    button. If you click on a button to delete a record, entire row should be
+    deleted. -->
+
+    <table>
+      <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>Jhone</td>
+        <td>10</td>
+        <td>
+          <button onclick="remove(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Doe</td>
+        <td>9</td>
+        <td>
+          <button onclick="remove(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>James</td>
+        <td>10</td>
+        <td>
+          <button onclick="remove(this)">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>James</td>
+        <td>8</td>
+        <td>
+          <button onclick="remove(this)">Delete</button>
+        </td>
+      </tr>
+    </table>
+    <br />
+
+    <!-- 4. Display an image in browser. Change the picture on mouseover and set the  
+    first picture on mouseout. -->
+
+    <img
+      src="https://5.imimg.com/data5/SELLER/Default/2023/3/296178265/EX/FQ/OZ/186724856/vivo-mobile-phone.jpg"
+      alt=""
+      id="image"
+      width="200"
+    />
+
+    <!-- 5. Show a counter in browser. Counter should increase on click on increase
+    button and decrease on click on decrease button. And show updated counter
+    value in browser. -->
+
+    <div class="counter" style="margin-left: 15px; font-size: 50px; margin-top: 10px;">0</div>
+    <button class="increase" style="padding: 10px 20px; font-size: 25px;">+</button>
+    <button class="decrease" style="padding: 10px 20px; font-size: 25px;">-</button>
+  </body>
+  <script src="app.js"></script>
+</html>

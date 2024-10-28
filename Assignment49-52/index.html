@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Assignment 49-52</h1>
+    <h2>EVENTS</h2>
+
+    <!-- 1. Create a signup form and display form data in your web page on
+    submission. -->
+    <form>
+      <label for="name">Username</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your Full Name"
+      />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your Email"
+      />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter your Password"
+      />
+      <button class="submit">signup</button>
+    </form>
+
+    <!-- 2. Suppose in your webpage there is content area in which
+    you have entered your item details, but user can only see
+    some details on first look. When user clicks on “Read
+    more” button, full detail of that particular item will be
+    displayed. -->
+    <h1>Item Details</h1>
+    <p>
+      This is a brief description of the item. Click the button below to read
+      more.
+    </p>
+    <p id="details" style="display: none">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis earum
+      hic blanditiis sunt! Natus, maxime tempore? Officiis tempore fuga
+      blanditiis quam error, totam ut, deleniti repudiandae itaque soluta
+      aspernatur eum.
+    </p>
+    <button id="showText">Read More</button>
+
+    <!-- 3. In previous assignment you have created a tabular data
+    using javascript. Let’s modify that. Create a form which
+    takes student’s details and show each student detail in
+    table. Each row of table must contain a delete button and
+    an edit button. On click on delete button entire row should
+    be deleted. On click on edit button, a hidden form will
+    appear with the values of that row. -->
+
+    <h1>Student Details</h1>
+    <form id="studentForm">
+      <label for="studentName">Student Name</label>
+      <input
+        type="text"
+        name="name"
+        id="studentName"
+        placeholder="Enter Student Name"
+      />
+
+      <label for="age">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        placeholder="Enter Student Age"
+      />
+
+      <label for="grade">Grade</label>
+      <input
+        type="text"
+        name="grade"
+        id="grade"
+        placeholder="Enter Student Grade"
+      />
+
+      <button class="submit">Submit</button>
+    </form>
+    <table id="studentTable">
+        <caption style="font-size: 25px; margin: 10px; font-weight: bold;">Result Sheet</caption>
+      <thead>
+        <tr></tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th colspan="2">Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+    <h2>Edit Student Details</h2>
+    <form id="editForm">
+      <label for="editName">Name:</label>
+      <input type="text" id="editName" required>
+      <label for="editAge">Age:</label>
+      <input type="number" id="editAge" required>
+      <label for="editGrade">Grade:</label>
+      <input type="text" id="editGrade" required>
+      <button type="submit" class="submit">Update Student</button>
+      <button type="button" id="cancelEdit" class="submit">Cancel</button>
+    </form>
+    <br /><br />
+  </body>
+  <script src="app.js"></script>
+</html>

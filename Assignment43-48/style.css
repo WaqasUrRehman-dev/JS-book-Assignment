@@ -1,0 +1,17 @@
+table{
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+button {
+    padding: 4px 8px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
